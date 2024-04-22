@@ -1,0 +1,487 @@
+body {
+    font-family: "Sedan", serif;
+    font-style: normal;
+    font-weight: bold;
+    background-color: #f2f2f2;
+
+}
+
+*:focus {
+    outline: none;
+    background-color: red;
+}
+
+::selection {
+    background-color: rgb(198, 162, 120);
+    color: white;
+}
+
+.line {
+    position: relative;
+    opacity: 0.5;
+    color: rgb(198, 162, 120);
+    width: 100%;
+    box-shadow: 0px 2px 5px rgba(198, 162, 120, 0.5);
+
+}
+
+.btn-outline-success {
+    color: rgb(198, 162, 120) !important;
+    --bs-btn-border-color: rgb(198, 162, 120);
+    --bs-btn-hover-bg: rgb(198, 162, 120);
+    --bs-btn-hover-border-color: rgb(198, 162, 120);
+    --bs-btn-active-bg: rgb(198, 162, 120);
+    --bs-btn-active-border-color: rgb(198, 162, 120);
+}
+
+.btn-outline-success:hover {
+    color: white !important;
+}
+
+.heading {
+    font-size: 18px;
+}
+
+.text {
+    color: grey;
+    opacity: 0.8;
+    font-size: 13px;
+}
+
+.shape::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 450px solid transparent;
+    border-right: 1000px solid white;
+
+}
+
+.title {
+    color: rgb(198, 162, 120);
+    font-size: large;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+
+/*Home Page*/
+.home-page-bg {
+    background-image: url("../img/home-page-bg.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+    width: 100%;
+}
+
+.home-page-bg::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    background-color: rgba(193, 193, 193, 0.3);
+    filter: grayscale(100%);
+}
+
+.home-page-heading {
+    color: white;
+    width: 500px;
+}
+
+.home-page-heading h1 {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.home-page-heading p {
+    font-size: 15px;
+    opacity: 0.7;
+}
+
+/*Main Text*/
+.main-text-box {
+    width: 460px;
+    height: auto;
+    background-color: white;
+    padding: 70px 40px 20px 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.main-line {
+    width: 150px;
+    right: 60px;
+    bottom: 40px;
+}
+
+/*Bride & Groom*/
+.photo-box {
+    width: 130px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 5px;
+
+}
+
+.photo-box img {
+    width: 120px;
+    height: 140px;
+    border-radius: 10px;
+}
+
+.names {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);
+}
+
+/*When*/
+.when-box {
+    width: auto;
+    height: 320px;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.when-box img {
+    width: 100%;
+    height: 280px;
+    transition: transform 1s, filter 1s ease-in-out;
+    transform-origin: center center;
+    filter: brightness(80%);
+}
+
+.when-box:hover img {
+    filter: brightness(100%);
+    transform: scale(1.3);
+}
+
+.countdown .box {
+    width: 70px;
+    border: 1px solid #f2f2f2;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 10px 10px 20px rgba(242, 242, 242, 0.9);
+    transition: transform 0.7s ease, box-shadow 0.7s ease;
+}
+
+.countdown .box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 20px rgba(242, 242, 242, 0.6);
+}
+
+
+.calendar-days {
+    display: flex;
+    justify-content: space-between;
+}
+
+.day-name {
+    flex: 1;
+}
+
+.calendar-dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.day {
+    text-align: center;
+    padding: 5px;
+}
+
+.day.highlighted {
+    border-radius: 50%;
+    border: 2px solid grey;
+}
+
+
+/*Where*/
+.where {
+    background-color: white;
+    margin-top: 350px;
+}
+
+.where-content-box {
+    background-color: white;
+    border-radius: 10px;
+    bottom: 80px;
+}
+
+.where-content {
+    margin-top: 20px;
+    margin-bottom: 100px;
+    padding: 50px;
+}
+
+.where-text {
+    width: 300px;
+}
+
+.where-line {
+    width: 80px;
+    transform: rotate(90deg);
+}
+
+/*RSVP*/
+.rsvp-content-box {
+    height: auto;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    bottom: 80px;
+}
+
+.rsvp-content {
+    padding: 40px 40px 30px 20px;
+}
+
+.rsvp-line {
+    width: 150px;
+    right: 60px;
+    top: 10px;
+
+}
+
+/*Gallery*/
+.gallery-box {
+    height: auto;
+    background-color: white;
+    margin-top: 80px;
+}
+
+.gallery-content {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding: 40px 40px 30px 20px;
+}
+
+.gallery-photo {
+    width: auto;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.gallery-photo img {
+    width: 100%;
+    transition: transform 1s, filter 1s ease-in-out;
+    transform-origin: center center;
+    filter: brightness(80%);
+}
+
+.gallery-photo:hover img {
+    filter: brightness(100%);
+    transform: scale(1.2);
+}
+
+/*Footer*/
+.footer-heading {
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(198, 162, 120);
+    opacity: 0.9;
+}
+
+.footer-heart {
+    color: white;
+    text-shadow: 2px 2px 0 #f2f2f2;
+}
+
+@media (max-width: 767px) {
+    .cont-marg {
+        margin-top: 40px;
+    }
+
+    .bride-groom {
+        margin-top: 20px;
+    }
+
+    .title {
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        font-size: medium;
+    }
+
+    /*Home Page*/
+    .home-page-bg {
+        background-size: cover;
+        background-position: center;
+        height: 250px;
+    }
+
+    .home-page-heading {
+        width: 220px;
+    }
+
+    .home-page-heading h1 {
+        font-size: 30px;
+    }
+
+    .home-page-heading p {
+        font-size: 10px;
+    }
+
+    .home-page-bg::after {
+        height: 250px;
+    }
+
+
+    /*Main Text*/
+    .main-text-box {
+        width: 300px;
+        padding: 50px 20px 10px 10px;
+        bottom: 20px;
+    }
+
+    .main-text {
+        display: flex;
+        justify-content: center;
+    }
+
+    .heading {
+        font-size: 15px;
+    }
+
+    .text {
+        color: grey;
+        opacity: 0.8;
+        font-size: 9px;
+    }
+
+    .main-line {
+        width: 90px;
+        right: 30px;
+    }
+
+    /*Bride & Groom*/
+    .bride-groom-boxes {
+        justify-content: space-between;
+    }
+
+    .photo-box {
+        width: 110px;
+
+    }
+
+    .photo-box img {
+        width: 100px;
+        height: 120px;
+    }
+
+    .names {
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+    }
+
+    /*When*/
+    /*Where*/
+    .where-content {
+        margin-top: 20px;
+        padding: 5px;
+    }
+
+    .where {
+        margin-top: 150px;
+    }
+
+    .where-line {
+        bottom: 10px;
+        width: 50px;
+    }
+
+    /*RSVP*/
+    .rsvp-line {
+        width: 90px;
+        right: 30px;
+    }
+
+    .rsvp-content-box {
+        bottom: 170px;
+    }
+
+    /*Gallery*/
+    .gallery-box {
+        margin-top: -20px;
+    }
+
+}
+
+@media (min-width: 769px) {
+
+    /*Home Page*/
+    .home-page-heading {
+        margin-left: 350px;
+        margin-bottom: 60px;
+    }
+
+    /*Main Text*/
+    .main-text-box {
+        bottom: 210px;
+        left: 40px;
+    }
+
+    /*Bride & Groom*/
+    .bride-groom-boxes {
+        margin-left: 100px;
+        bottom: 210px;
+        width: 360px;
+    }
+
+    /*When*/
+    /*Where*/
+    /*RSVP*/
+    /*Gallery*/
+}
+
+@media (width: 768px) {
+
+    /*Home Page*/
+    .home-page-heading {
+        margin-left: 200px;
+        margin-bottom: 100px;
+    }
+
+    /*Main Text*/
+    .main-text-box {
+        width: 320px;
+        bottom: 210px;
+    }
+
+    .main-line {
+        width: 100px;
+        right: 40px;
+    }
+
+    /*Bride & Groom*/
+    .bride-groom-boxes {
+        bottom: 210px;
+    }
+
+    .couple-name {
+        margin-right: 0;
+        right: 40px;
+    }
+
+    /*When*/
+    /*Where*/
+    /*RSVP*/
+    .rsvp-line {
+        width: 90px;
+        right: 40px;
+    }
+
+    /*Gallery*/
+
+
+}
