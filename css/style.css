@@ -327,7 +327,9 @@ body {
     .home-page-heading h1 {
         font-size: 30px;
     }
-
+.footer-heading{
+    font-size: 20px;
+}
     .home-page-heading p {
         font-size: 10px;
     }
